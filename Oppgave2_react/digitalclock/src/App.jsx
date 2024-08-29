@@ -1,13 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 
 const App = () => {
 
     const [time, setTime] = useState(Date.now())
 
-    setInterval(() => {
-        setTime(Date.now())
-    }, 1000)
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setTime(Date.now())
+        }, 500)
+
+        return () => clearInterval(interval)
+    }, [time])
 
     return (
         <main className='w-screen h-screen flex items-center justify-center bg-[#110119] flex-col'>
