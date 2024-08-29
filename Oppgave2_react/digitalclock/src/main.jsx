@@ -6,6 +6,6 @@ import MyHobbies from './MyHobbies.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <MyHobbies />
+    <App />
   </StrictMode>,
 )
