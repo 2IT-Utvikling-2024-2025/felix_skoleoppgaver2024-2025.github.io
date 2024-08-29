@@ -1,4 +1,4 @@
-import react from 'react'
+import react, { useState } from 'react'
 
 function MyHobbies() {
 
@@ -11,8 +11,9 @@ function MyHobbies() {
     const displayHobbies = hobbies.map((hobby) => {
 
         return (
-            <li key={hobby.id}>
+            <li key={hobby.id} style={{ color: hobby.isFavore ? "magenta" : "white" }}>
                 {hobby.title}
+                <VoteButton />
             </li>
         )
     })
@@ -24,6 +25,17 @@ function MyHobbies() {
                 {displayHobbies}
             </ul>
         </>
+    )
+}
+
+
+function VoteButton() {
+
+    const [vote, setVote] = useState(0)
+
+
+    return (
+        <button className='button' onClick={(() => setVote(vote + 1))}>Voted {vote} time/s</button>
     )
 }
 
