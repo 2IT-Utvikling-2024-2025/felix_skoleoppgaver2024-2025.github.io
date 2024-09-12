@@ -1,6 +1,10 @@
+import MyList from "../components/MyList"
+
 const App = () => {
   return (
-    <div className=''>App</div>
+    <>
+      <MyList />
+    </>
   )
 }
 

@@ -1,0 +1,87 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  padding: 0;
+  margin: 0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.inputBackground {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.color-inp {
+  border: 2px solid black;
+  outline: transparent;
+  padding: 0;
+}
+
+.Clockdiv {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #150010;
+  justify-content: center;
+}
+
+.clock-h1 {
+  color: white;
+  font-size: 40px;
+  margin: 5px;
+}
+
+.Clock-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.clock-p {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  padding: 30px;
+  border: #aa55b3 2px solid;
+  border-radius: 5px;
+  background: linear-gradient(to bottom right, #a80782, #2e3e8f, #ab0f87);
+  background-clip: text;
+  color: transparent;
+}
+
+.clock-bar {
+  width: 50vw;
+  padding: 0;
+  margin: 0;
+  height: 5px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #a80782, #2e3e8f, #ab0f87);
+}

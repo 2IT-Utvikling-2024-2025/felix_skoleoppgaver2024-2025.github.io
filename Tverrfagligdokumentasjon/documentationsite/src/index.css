@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  --text: #eeedef;
+  --background: #160f17;
+  --primary: #d0a6d6;
+  --secondary: #74267e;
+  --accent: #ca3fdc;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+.cover {
+  height: 100vh;
+  width: 100%;
+}
+
+
+.introduction {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  background-clip: text;
+  color: var(--text);
+  text-align: center;
+}
+
+.introduction h1 {
+  color: transparent;
+  font-size: 40px;
+}
+
+.dokumenter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  align-items: center;
+  text-align: center;
+}
+
+.dokumenter h1 {
+  font-size: 40px;
+}
+
+.dokumenter p {
+  width: 60%;
+  font-size: 16px;
+}
+
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--secondary);
+  width: 275px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
+.text-color {
+  color: var(--text);
+}
+
+.header-1 {
+  font-size: 40px;
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.def-padding {
+  padding: 10px;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.margin-top {
+  margin-top: 20px;
+}
+
+.larger-padding {
+  padding: 20px;
+}
+
+.paragraph-1 {
+  padding: 1rem 1rem;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .dokumenter p {
+    width: 80%;
+  }
+
+}
