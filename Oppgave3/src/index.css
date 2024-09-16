@@ -1,3 +1,83 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.listitem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.todoform {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.renderedlist {
+    width: 50%;
+    font-family: sans-serif;
+}
+
+
+.trashcan {
+    border: none;
+    background: none;
+    font-size: 25px;
+    transition: all 0.2s ease-out;
+    color: black;
+}
+
+.edit {
+    border: none;
+    background: none;
+    font-size: 25px;
+    transition: all 0.2s ease-out;
+    color: black;
+}
+
+.edit:hover {
+    cursor: pointer;
+    color: #4884d8;
+}
+
+.trashcan:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.todoform input[type=text] {
+    width: 60%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px gray solid;
+    outline: none;
+}
+
+.todoform input[type=submit] {
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4884d8;
+    width: 20%;
+    color: white;
+}
+
+.todoform input[type=submit]:hover {
+    background-color: #0b5ed7;
+    cursor: pointer;
+}
+
+
+
+.todo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo h1 {
+    font-size: 30px;
+    font: bold;
+    font-family: sans-serif;
+}

@@ -1,9 +1,8 @@
-import MyList from "../components/MyList"
-
+import Todo from "../components/Todo"
 const App = () => {
   return (
     <>
-      <MyList />
+      <Todo />
     </>
   )
 }
