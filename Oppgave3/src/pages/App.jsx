@@ -1,8 +1,11 @@
 import Todo from "../components/Todo"
+import Oppgaver from "../components/Oppgaver"
+import Kosystem from "../components/Kosystem"
+
 const App = () => {
   return (
     <>
-      <Todo />
+      <Kosystem />
     </>
   )
 }
