@@ -50,11 +50,12 @@ const Kosystem = () => {
 
                 currentStage1 += 1
 
+                console.log(koerArray)
+
                 if (personer.length <= 0) {
                     console.log("Ingen flere personer i hoved køen")
                     clearInterval(interval1)
                 } else if (personer[0].antallVarer < 10) {
-
 
                     koerArray[0].push(personer[0])
 
@@ -103,7 +104,7 @@ const Kosystem = () => {
                 }
             }
 
-        }, 5_000)
+        }, 10_000)
     }
 
 
