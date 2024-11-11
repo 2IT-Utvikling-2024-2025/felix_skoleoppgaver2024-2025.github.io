@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+:root {
+  --text: #f1e9f9;
+  --background: #100617;
+  --primary: #c292e1;
+  --secondary: #892673;
+  --accent: #cd4b9a;
+  background-color: var(--background);
+}
+
+.grid-class {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+}
+
+
+.klassekart h1 {
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.klassekart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teacherdesk {
+  height: 180px;
+  width: 250px;
+  background: url(desk.png);
+  background-size: cover;
+  border: none;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 50px;
+}
+
+.teacherdesk h3 {
+  margin-top: 7px;
+  color: black;
+  font-size: 15px;
+}
+
+.desks {
+  width: 250px;
+  height: 180px;
+  background: url(desk.png);
+  background-size: cover;
+  border: none;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 40px;
+}
+
+.desks h3 {
+  color: black;
+  margin-top: 7px;
+  font-size: 15px;
+}
+
+.create {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  color: white;
+  font-size: clamp(1rem, 3vw, 4rem);
+  margin-top: 50px;
+}
+
+.add {
+  margin: 50px;
+  display: flex;
+  gap: 50px;
+}
+
+.add input {
+  padding: 0px;
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 17px;
+  width: 60%;
+}
+
+.add input:focus {
+  outline: none;
+}
+
+.add input::placeholder {
+  color: white;
+}
+
+.add button {
+  padding: 15px;
+  width: 150px;
+  border: 0px;
+  border-radius: 10px;
+  background: var(--secondary);
+  position: relative;
+  bottom: 0;
+  color: white;
+  font-size: 20px;
+  transition: all 0.2s;
+}
+
+.add button:hover {
+  bottom: 10px;
+  background-color: var(--primary);
+}
+
+.elever {
+  width: 300px;
+  background-color: #89267365;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.blurball {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  filter: blur(500px);
+  background-color: var(--accent);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.under-title {
+  color: white;
+  margin-top: 25px;
+  font-size: clamp(1rem, 2.5vw, 4rem);
+}
+
+.elever ul {
+  color: white;
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.elever ul li {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.generate {
+  width: 200px;
+  height: 60px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  /* background: linear-gradient(to bottom right, var(--accent), var(--secondary)); */
+  background-color: var(--accent);
+  position: relative;
+  bottom: 0;
+  transition: all 0.2s;
+  border: 0px;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+}
+
+.generate:hover {
+  cursor: pointer;
+  bottom: 5px;
+  background-color: #e465b2;
+}
