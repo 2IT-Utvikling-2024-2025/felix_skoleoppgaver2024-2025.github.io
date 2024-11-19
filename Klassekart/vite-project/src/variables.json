@@ -1,0 +1,4 @@
+{
+    "CreateStudentUrl": "http://localhost:3000/api/v1/students",
+    "CreateClassUrl": "http://localhost:3000/api/v1/classes"
+}

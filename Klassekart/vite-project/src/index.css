@@ -57,7 +57,7 @@
 .desks {
   width: 250px;
   height: 180px;
-  background: url(desk.png);
+  background: url(/desk.png);
   background-size: cover;
   border: none;
   color: white;
@@ -66,6 +66,29 @@
   justify-content: center;
   align-items: start;
   margin-top: 40px;
+}
+
+.desks:hover {
+  cursor: pointer;
+}
+
+.student {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.student-title {
+  color: white;
+  font-size: 50px;
+}
+
+.student-stuff h1 {
+  color: white;
+  margin-top: 20px;
 }
 
 .desks h3 {
